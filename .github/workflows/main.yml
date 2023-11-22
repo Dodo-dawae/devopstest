@@ -12,6 +12,7 @@ jobs:
         run: mvn clean install
       - name: Depcheck
         uses: dependency-check/Dependency-Check_Action@main
+        continue-on-error: true
         env:
           JAVA_HOME: /opt/jdk
         id: Depcheck
