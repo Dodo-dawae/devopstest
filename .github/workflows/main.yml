@@ -40,7 +40,7 @@ jobs:
         java-version: '17'
         cache: 'maven'
     - name: Build with Maven cloud
-      run: mvn -B verify sonar:sonar -Dsonar.projectKey=devopstest_test -Dsonar.organization=devopstest -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
+      run: mvn -B verify sonar:sonar -Dsonar.projectKey=Dodo-dawae_devopstest -Dsonar.organization=Dodo-dawae -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
